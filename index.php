@@ -1,35 +1,49 @@
+
 <?php
 
 class A
 {
+    protected $x;
+
+    public function line_equation($a, $b)
+    {
+        if ($a != 0) {
+            return $this->x = (-$b) / $a;
+        }
+        return null;
+
+
+    }
 
 }
+
 
 class B extends A
 {
-    public function __construct($a)
+    protected $d;
+    protected $k;
+
+
+    public function quadratic_equation($a, $b, $c)
     {
-        $this->a = $a;
+        if ($a == 0) {
+            $this->line_equation($a, $b);
+        }
+        $d = pow($b, 2) - 4 * $a * $c;
+
+        if ($d < 0) {
+            return array();
+        }
+        if ($d == 0) {
+            return $this->x = -$b / (2 * $a);
+
+        }
+            $x = -$b + sqrt($d) / (2 * $a);
+            $k = -$b - sqrt($d) / (2 * $a);
+            return array($x, $k);
+
     }
 
-    protected $a;
+
 }
 
-class C extends B
-{
-    public function _construct($a, $b)
-    {
-        $this->b = $b;
-        parent::__construct($a);
-    }
-
-    protected $b;
-}
-
-$a1 = new A();
-$b2 = new B($a1);
-$b3 = new B($b2);
-$c4 = new C($b3, $a1);
-$b5 = new B($c4);
-
-var_dump($b5);
