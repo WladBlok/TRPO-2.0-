@@ -14,7 +14,7 @@ class Linear
 
         }
 
-        return 0;
+        throw new BlokException("The equation don't exist");
 
     }
 

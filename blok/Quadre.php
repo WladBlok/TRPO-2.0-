@@ -19,7 +19,7 @@ class Quadre extends Linear implements EquationInterface{
         $d = pow($b, 2) - 4 * $a * $c;
 
         if ($d < 0) {
-            return 0;
+            throw new BlokException("D<0");
         }
         if ($d == 0) {
             $x = (-$b) / (2 * $a);
