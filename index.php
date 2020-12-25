@@ -11,7 +11,8 @@ require_once 'blok/Quadre.php';
 
 
 try {
-    echo "Enter 3 values:";
+    MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
+    echo "Enter 3 values:\n\r";
     $a = (float)readline();
     $b = (float)readline();
     $c = (float)readline();
