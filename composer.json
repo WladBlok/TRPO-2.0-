@@ -1,56 +1,26 @@
 {
-    "name": "wladblok/trpo2",
-    "description": "trpo",
-    "type": "library",
-    "license": "-",
-    "authors": [
-        {
-            "name": "vladislaw blok",
-            "email": "vl-blok@hotmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "wladblok/blok": "1.0"
+  "name": "wladblok/trpo2",
+  "description": "trpo",
+  "type": "project",
+  "license": "-",
+  "authors": [
+    {
+      "name": "vladislaw blok",
+      "email": "vl-blok@hotmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "wladblok/blok": "3.0"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/WladBlok/blok"
     },
-    "repositories": [{
-        "type": "package",
-        "package": {
-            "name": "WladBlok/blok",
-        "version": "1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/WladBlok/blok",
-            "reference": "main",
-            "autoload": {
-                "classmap": [
-                    "BlokException.php",
-                    "Linear.php",
-                    "MyLog.php",
-                    "Quadre.php"
-                ]
-            }
-        }
-    }},
-        {
-            "type": "package",
-            "package": {
-                "name": "rok9ru/trpo-core",
-                "version": "2.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/rok9ru/trpo-core",
-                    "reference": "master",
-                    "autoload": {
-                        "files": [
-                            "core/EquationInterface.php",
-                            "core/LogAbstract.php",
-                            "core/LogInterface.php"
-                        ]
-                    }
-                }
-            }
-
-        }
-    ]
+    {
+      "type": "git",
+      "url": "https://github.com/rok9ru/trpo-core"
+    }
+  ]
 }
