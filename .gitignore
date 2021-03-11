@@ -1,7 +1,5 @@
 .idea
-core
 log
 version
-composer.phar
-README.md
-/vendor/
+.phar
+vendor/
