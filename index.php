@@ -1,21 +1,20 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
-
-
+require_once __DIR__ . './vendor/autoload.php';
+use blok\BlokException;
 try {
-    MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
+    blok\MyLog::log("Версия программы: " . trim(file_get_contents('version')) );
     echo "Enter 3 values:\n\r";
     $a = (float)readline();
     $b = (float)readline();
     $c = (float)readline();
-    MyLog::log("The equation $a*x^2+$b*x+$c=0");
+    blok\MyLog::log("The equation $a*x^2+$b*x+$c=0");
     $o = new \blok\Quadre();
     $r = $o->solve($a, $b, $c);
-    MyLog::log("Roots:" . implode(", ", $r));
+    blok\MyLog::log("Roots:" . implode(", ", $r));
 } catch (BlokException $e) {
-    MyLog::log($e->getMessage());
+    blok\MyLog::log($e->getMessage());
 
 }
 
-MyLog::write();
+blok\MyLog::write();

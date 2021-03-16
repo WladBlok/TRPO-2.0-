@@ -4,17 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6baac1d18aa748d40312dfdc940b99d6",
+    "content-hash": "f46955c967b7ea4dee9a56850b13c1c9",
     "packages": [
         {
-            "name": "WladBlok/blok",
-            "version": "1.0",
+            "name": "rok9ru/trpo-core",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395"
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "core\\": "core"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "Project for lesson subject \"TRPO\" test project",
+            "time": "2021-01-13T12:08:11+00:00"
+        },
+        {
+            "name": "wladblok/blok",
+            "version": "3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WladBlok/blok",
-                "reference": "main"
+                "reference": "7902e11e91efaa4b8c167305c91d53e13b2810b1"
             },
-            "type": "library"
+            "require": {
+                "rok9ru/trpo-core": "2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "blok\\": "blok"
+                }
+            },
+            "license": [
+                "-"
+            ],
+            "authors": [
+                {
+                    "name": "vladislaw blok",
+                    "email": "vl-blok@hotmail.com"
+                }
+            ],
+            "description": "blok",
+            "time": "2021-03-11T08:39:34+00:00"
         }
     ],
     "packages-dev": [],
