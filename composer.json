@@ -13,6 +13,9 @@
   "require": {
     "wladblok/blok": "3.0"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
   "repositories": [
     {
       "type": "git",
